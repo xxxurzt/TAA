@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игра "Угадай число"</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Игра "Угадай число"</h1>
+
+    <button id="startGame">Начать игру</button>
+
+    <!-- Выбор диапазона -->
+    <div>
+      <label for="rangeChoice">Использовать стандартный диапазон (1-100)?</label>
+      <input type="checkbox" id="rangeChoice" checked>
+    </div>
+
+    <div id="customRange" style="display:none;">
+      <div>
+        <label for="minRange">Минимум:</label>
+        <input type="number" id="minRange" value="1" min="1">
+        <label for="maxRange">Максимум:</label>
+        <input type="number" id="maxRange" value="100" min="1">
+      </div>
+    </div>
+
+    <p>Попробуй угадать число от <span id="rangeText">1 до 100</span>!</p>
+
+    <input type="number" id="userGuess" placeholder="Введите число" disabled>
+    <button id="submitGuess" disabled>Угадать</button>
+
+    <button id="hintButton" disabled>Подсказка</button>
+
+    <p id="feedback"></p>
+    <p id="attempts"></p>
+
+    <button id="newGame" style="display:none;">Новая игра</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

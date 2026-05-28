@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Шрифт Poppins */
+  background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.game-container:hover {
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 30px;
+  color: #4CAF50;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  width: 80%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+#feedback {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+#attempts {
+  font-size: 16px;
+  color: #555;
+}
+
+#newGame {
+  background-color: #007BFF;
+  display: none;
+  margin-top: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#newGame:hover {
+  background-color: #0056b3;
+}
+
+#newGame:active {
+  transform: translateY(1px);
+}
+
+label {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #333;
+}
+
+#minRange, #maxRange {
+  width: 45%; /* Устанавливаем ширину 45% для каждого поля ввода */
+  margin-right: 10px; /* Отступ между полями */
+}
+
+#hintButton {
+  background-color: #FF9800;
+}
+
+#hintButton:hover {
+  background-color: #fb8c00;
+}
+
+#hintButton:active {
+  transform: translateY(1px);
+}
+
+
+#customRange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px; 
+}
+
+
+#customRange label, #customRange input {
+  margin-right: 10px;
+}
+
+
+#startGame {
+  margin-top: 30px; 
+  margin-bottom: 20px; 
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+}
